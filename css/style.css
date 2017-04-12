@@ -1,0 +1,80 @@
+h1.name {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    position: fixed;
+}
+mainContainer {
+    height: 10em;
+    position: relative
+}
+mainContainer, h1{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+        
+}
+navbar, ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:49%;
+    left:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
+    background-color: #333;
+    border-radius: 25px;
+}
+navbar, li {
+    display: inline-block;
+    font-size: 1em;
+}
+navbar, li, a{
+    color: white;
+    padding: 14px 16px;
+    
+}
+a:link {
+    color:lightblue;
+    text-decoration: none;
+}
+a:visited {
+    color:lightblue;
+    text-decoration: none;
+}
+a:hover {
+    color:white;
+    text-decoration: underline;
+}
+a:active {
+    color:lightblue;
+    text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+    navbar, li {
+        display: block;
+    }
+    navbar, ul{
+        top: 65%;  
+    }
+}
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url("../images/background2.png");
+    }
+}
+@media only screen and (min-width: 800px) {
+    body {
+        background-image: url("../images/background1.png");
+    }
+    h1.name {
+        color: white;
+    }
+}
+
+    
+    
